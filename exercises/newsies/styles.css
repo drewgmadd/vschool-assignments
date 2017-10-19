@@ -1,0 +1,38 @@
+body {
+
+}
+.papername {
+  text-align: center;
+  text-decoration: underline;
+  font-family: sans-serif;
+  margin-bottom: 0px;
+}
+.date {
+  text-align: center;
+  margin-top: 0px;
+
+}
+.mainhead {
+  text-align: center;
+  font-family: sans-serif;
+}
+.subhead {
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration: underline;
+
+}
+.skiphoto {
+  width: 250px;
+  height: 150px;
+  float:left;
+}
+.safety, .sales {
+    color: #00cc99;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p {
+  column-count: 3;
+}

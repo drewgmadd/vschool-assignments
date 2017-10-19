@@ -1,0 +1,31 @@
+.mainhead {
+    color: darkgreen;
+    font-family: Georgia;
+    text-align: center;
+}
+
+.subhead {
+    font-family: Georgia;
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+}
+
+.linktext {
+    text-decoration: none;
+}
+
+.linktext:hover {
+    text-decoration: underline;
+}
+
+.text {
+    text-transform: uppercase;
+}
+
+.photo {
+    float: left;
+    padding: 20px;
+}
