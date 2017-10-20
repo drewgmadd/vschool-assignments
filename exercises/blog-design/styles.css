@@ -1,0 +1,53 @@
+.nav-bar {
+  width:100%;
+  height: 100px;
+  background-color: #B22E2C;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 50px;
+  color: #69A2CC;
+  font-family: sans-serif;
+}
+body {
+  background-color:#FFFFA8;
+}
+.central-bar {
+  width: 400px;
+  height: 1600px;
+  background-color:#FF9E9C;
+  position: relative;
+  left: 50%;
+  top: 110px;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.title {
+  text-align: center;
+  color: #6592B2;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+.publication-date {
+  font-family: sans-serif;
+  color: #69A2CC;
+}
+.post {
+  font-family: Georgia;
+}
+#slcphoto {
+  width: 200px;
+  height: 150px;
+  float:left;
+  margin-right: 10px;
+}
+
+#skiphoto {
+  width: 225px;
+  height: 150px;
+  float: right;
+  margin-left: 10px;
+}

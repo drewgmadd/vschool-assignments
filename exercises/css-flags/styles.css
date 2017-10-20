@@ -1,0 +1,137 @@
+/*.blue {
+  height: 500px;
+  width: 750px;
+  background-color: blue;
+  position: relative;
+}
+.white {
+  height: 500px;
+  width: 250px;
+  background-color: white;
+  position: absolute;
+  left: 33.3%;
+}
+Germany
+.red {
+  height: 600px;
+  width: 900px;
+  background-color: red;
+  position: fixed;
+}
+.yellow {
+  height: 200px;
+  width: 900px;
+  background-color: #eacd12;
+  position: absolute;
+  bottom: 0;
+}
+.black {
+  height: 200px;
+  width: 900px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}*/
+
+/*
+Madagascar
+.white {
+  height: 600px;
+  width: 900px;
+  background-color: white;
+  position: relative;
+
+}
+.red {
+  height: 300px;
+  width: 600px;
+  background-color: #e54242;
+  position:absolute;
+  right: 0;
+}
+.green {
+  height: 300px;
+  width: 600px;
+  background-color: #3a7c3f;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}*/
+/*
+Swiss
+.red {
+  height: 600px;
+  width: 600px;
+  background-color: red;
+  position: relative;
+}
+.white {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.horizontal {
+  height: 120px;
+  width: 360px;
+}
+.vertical {
+  height: 360px;
+  width: 120px;
+}*/
+/*
+Sweden
+.blue {
+  height: 500px;
+  width: 900px;
+  background-color: #3c79a8;
+  position: relative;
+}
+.wide {
+  height:100px;
+  width: 900px;
+  background-color: #f9de2a;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tall {
+  height: 500px;
+  width: 100px;
+  background-color: #f9de2a;
+  position: absolute;
+  left: 30%;
+}*/
+.blue {
+  height: 500px;
+  width: 850px;
+  background-color: #18219b;
+  position: relative;
+}
+.red {
+  height: 167px;
+  width: 850px;
+  background-color: #c10b0b;
+  position: absolute;
+  top: 0;
+}
+.green {
+  height: 167px;
+  width: 850px;
+  background-color: #4c8229;
+  position: absolute;
+  bottom: 0;
+}
+.white {
+  height: 30px;
+  width: 850px;
+  background-color: white;
+  position: absolute;
+}
+.top {
+  top: 33.3%;
+}
+.bottom {
+  bottom: 33.3%;
+}
