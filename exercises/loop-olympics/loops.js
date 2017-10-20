@@ -87,3 +87,19 @@ for (var i = 0; i < 3; i++) {
   multiGrid.push([0,1,2]);
 }
 console.log(multiGrid);
+//
+// var grid1 = [];
+// var masterGrid = [];
+// for (var i = 0; i < 3; i++) {
+//     grid1[i] = 0;
+//     masterGrid[i] = grid1;
+// }
+// console.log(masterGrid);
+// var matrix = [];
+// for (var i = 0; i < 3; i++){
+//   matrix[i] = [];
+//   for (var j = 0;j < 3; j++ ){
+//     matrix[i][j] = 0;
+//   }
+// }
+// console.log(matrix);
