@@ -103,7 +103,7 @@ Sweden
   position: absolute;
   left: 30%;
 }*/
-.blue {
+/* Gambia .blue {
   height: 500px;
   width: 850px;
   background-color: #18219b;
@@ -134,4 +134,35 @@ Sweden
 }
 .bottom {
   bottom: 33.3%;
+} */
+.main-red{
+  width: 800px;
+  height: 400px;
+  background-color: #cc2c2c;
+  position: relative;
+}
+.white-block {
+  height: 200px;
+  width: 330px;
+  background-color: white;
+  position: relative;
+}
+.red {
+  background-color: #cc2c2c;
+  position: absolute;
+}
+.vertical {
+  height: 150px;
+  width: 60px;
+  top:10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.horizontal {
+  height: 60px;
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
 }
