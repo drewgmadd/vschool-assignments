@@ -1,7 +1,7 @@
 body {
     font-family:sans-serif;
     color: #0e0e06;
-    background-color: rgba(132, 81, 67, 0.62)
+    background-color: rgba(132, 81, 67, 0.62);
 }
 
 .navbar li {
@@ -26,10 +26,6 @@ body {
     margin-bottom:10px;
 }
 
-.list {
-   text-align: left;
-
-}
 
 .fake-link {
     text-decoration: underline;
@@ -38,6 +34,7 @@ body {
 
 nav {
     background-color: #7F4F4E;
+
 }
 
 .fake-link {
@@ -45,7 +42,7 @@ nav {
 }
 
 ul {
-    font-size:15px;
+    font-size:20px;
 }
 
 p {

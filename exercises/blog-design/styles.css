@@ -24,6 +24,7 @@ body {
   top: 110px;
   transform: translateX(-50%);
   z-index: -1;
+  padding: 20px;
 }
 .title {
   text-align: center;
@@ -50,4 +51,10 @@ body {
   height: 150px;
   float: right;
   margin-left: 10px;
+}
+#kilamanjaro {
+  width: 240px;
+  height: 200px;
+  float: right;
+
 }
