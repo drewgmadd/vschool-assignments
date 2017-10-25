@@ -1,0 +1,43 @@
+body {
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/a7/83/6f/a7836f55cb83d9c10875af6885f55603.jpg");
+  background-size: contain;
+}
+p {
+  font-family: Helvetica;
+}
+
+h1, h2 {
+  font-family: sans-serif;
+}
+
+.header-text {
+  padding: 15px;
+}
+
+.main-title {
+  height: 75px;
+  width: 100%;
+  top: 0;
+  background-color: firebrick;
+}
+.header-text {
+  text-align: center;
+
+}
+
+.first-list-item {
+  background-color: #00A110;
+  opacity: 0.75;
+}
+
+.second-list-item {
+
+}
+
+.third-list-item {
+
+}
+.bobomb-photo {
+  height: 275px;
+  width: 275px;
+}
