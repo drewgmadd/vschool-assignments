@@ -1,0 +1,33 @@
+.light-pink {
+  background-color: #F5C6D6;
+  height: 150px;
+  border: solid white 5px;
+}
+
+.hot-pink {
+  background-color: #EE2E84;
+  height: 150px;
+  border: solid white 5px;
+}
+
+.blue {
+  background-color: #85CFD8;
+  height: 150px;
+  border: solid white 5px;
+}
+
+.green {
+  background-color: #8DC63F;
+  height: 150px;
+  border: solid white 5px;
+}
+
+.orange {
+  background-color: #E76E34;
+  height: 150px;
+  border: solid white 5px;
+}
+
+.color-grid {
+  width: 75%;
+}
