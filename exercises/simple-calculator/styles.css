@@ -1,0 +1,23 @@
+.addition {
+  height:60px;
+  width: 90%;
+  background-color: gray;
+  margin: 20px;
+  padding: 5px;
+}
+
+.subtraction {
+  height: 60px;
+  width: 90%;
+  margin: 20px;
+  padding: 5px;
+  background-color: #badfff;
+}
+
+.multiplication {
+  height: 60px;
+  width: 90%;
+  margin: 20px;
+  padding: 5px;
+  background-color: #a5b986
+}
