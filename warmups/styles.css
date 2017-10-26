@@ -1,0 +1,47 @@
+@font-face {
+  font-family: marioFont;
+  src: url(SuperMario256.ttf);
+}
+
+body {
+  font-family: marioFont;
+}
+.head {
+  height: 90px;
+  background-color: #f1d345;
+  margin-top: 40px;
+  margin-bottom: 0%;
+}
+.image-row {
+  height: 320px;
+  background-color: #d81313;
+  border: solid #d81313 3px;
+}
+.about {
+  height: 180px;
+
+}
+.bottom-image {
+  height: 90px;
+  background-color: #f1d345;
+  margin-bottom: 40px;
+}
+.luigi {
+  height:290px;
+  width: 260px;
+  margin-top: 15px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.green-mush {
+  height: 80px;
+  float: right;
+  margin-top: 5px;
+}
+.luigi-text {
+ font-size: 65px;
+ margin-left: 6%;
+ margin-top: 5px;
+ color: #d81313;
+ display: inline-block;
+}

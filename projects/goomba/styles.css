@@ -1,5 +1,5 @@
 body {
-  background: url("https://s-media-cache-ak0.pinimg.com/originals/a7/83/6f/a7836f55cb83d9c10875af6885f55603.jpg");
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/a7/83/6f/a7836f55cb83d9c10875af6885f55603.jpg") fixed;
   background-size: contain;
 }
 p {
@@ -17,8 +17,10 @@ h1, h2 {
 .main-title {
   height: 75px;
   width: 100%;
+  position: fixed;
   top: 0;
   background-color: firebrick;
+  z-index: 1;
 }
 .header-text {
   text-align: center;
@@ -27,17 +29,57 @@ h1, h2 {
 
 .first-list-item {
   background-color: #00A110;
-  opacity: 0.75;
+  opacity: 0.9;
+  height: 275px;
+  margin-top: 100px;
 }
 
 .second-list-item {
-
+  height: 275px;
+  background-color: firebrick;
+  opacity: 0.9;
 }
 
 .third-list-item {
-
-}
-.bobomb-photo {
   height: 275px;
-  width: 275px;
+  background-color: #2459be;
+  opacity: 0.9;
+}
+
+.bobomb-photo {
+  height: 220px;
+  width: 220px;
+  float:left;
+}
+.cheep-pic {
+  float:left;
+}
+
+.goomba-pic {
+  float:left;
+  margin: 3px;
+  height: 220px;
+}
+
+.total {
+  display: inline-block;
+  padding:5px;
+}
+.total-coins {
+  font-size: 25px;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.button {
+  margin-left: 50px;
+}
+
+.final-value {
+  display:inline-block;
+  font-size: 25px;
+}
+.input-box {
+  padding:8px;
+  margin-left: 5px;
 }
