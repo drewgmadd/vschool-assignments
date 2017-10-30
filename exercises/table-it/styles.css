@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: helvetica, sans-serif;
+}
+td, th {
+  text-align: left;
+  border: solid 2px black;
+  padding: 10px;
+}
+.description {
+  background-color: #508cc1;
+}
+tr:nth-child(odd) {
+  background-color: #becfde;
+}
+tr:nth-child(even) {
+  background-color: #86ad86;
+}

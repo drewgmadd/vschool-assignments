@@ -1,0 +1,88 @@
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  margin: 20px;
+  padding: 30px;
+  display: inline-block;
+  border: 2px solid black;
+  opacity;
+}
+
+.one {
+  box-shadow: -15px 30px 5px black;
+  transition: all 1s cubic-bezier(0.3, 1.27, 1, 0.13) 1s;
+}
+.one:hover {
+  background-color: blue;
+  border-radius: 100%;
+  padding: 10px;
+  box-shadow: 30px 30px 5px green;
+
+}
+.two {
+  background-color: blue;
+  transition: all .1s ease-in-out .5s;
+}
+
+.two:hover {
+  opacity: 0%;
+  border: 10px solid black;
+  height: 400px;
+  width: 400px;
+}
+
+.three {
+  background-color: yellow;
+  box-shadow: 20px -20px 4px black;
+  transition: .2s all ease-in-out 0s;
+}
+
+.three:hover {
+  background-color: purple;
+  box-shadow: -20px 20px 20px #180552
+}
+
+.four {
+  background-color: pink;
+  border-radius: 25%;
+  border: 0px;
+  transition: .2s all ease-in-out .1s;
+}
+
+.four:hover {
+  border-radius: 0%;
+  background-color: #0085a2;
+}
+
+.five {
+  background-color: rgba(11, 175, 26, 0.52);
+  box-shadow: 15px 15px 0px orange;
+  transition: .3s all ease-in-out .3s;
+}
+
+.five:hover {
+  border-radius: 50%;
+}
+
+.six {
+  background-color: #7b1578;
+  border-radius: 10%;
+  transition: 1s all ease-in-out 1s;
+}
+.six:hover {
+  background-color: firebrick;
+  opacity: 15;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+
+}
+
+.text {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
