@@ -1,0 +1,49 @@
+{
+  "appetizers": [{"name": "Wings",
+                  "ingredients": ["Chicken", "Hot Sauce", "Blue Cheese", "Celery"],
+                  "description": "Spicy Buffalo Wings"
+                  },
+                {"name": "Nachos",
+                  "ingredients": ["Tortilla chips", "Cheese", "Sour Cream", "Refried Beans"],
+                  "description": "Pile of Nachos",
+                  },
+                {"name": "Hummus",
+                  "ingredients": ["Grabanzo beans", "salt", "pepper", "spices"],
+                  "description": "Plate of hummus with pita and olives."}],
+  "cold sandwiches": [{"name": "Turkey Sandwich",
+                       "ingredients": ["Smoked Turkey", "tomatoes", "mayo", "mustard", "cranberry sauce"],
+                       "description": "Smoked turkey sandwich with cranberry sauce"
+                     },
+                     {"name": "Veggie Sandwich",
+                       "ingredients": ["Avocado", "tomatoes", "peppers", "cream cheese"],
+                       "description": "Sandwich topped wath assorted vegetables"
+                     },
+                     {"name": "Tuna Salad",
+                     "ingredients": ["Tuna", "mayo", "tomato", "lettuce"],
+                     "description": "Fresh tuna salad sandwich with lettuce and tomato"}],
+  "hot sandwiches": [{"name": "Grilled Cheese",
+                      "ingredients": ["Cheese", "Sourdough", "Grilled Onions"],
+                      "description": "Toasted grilled cheese topped with grilled onions"
+                    },
+                    {"name": "Reuben",
+                      "ingredients": ["Rye Bread", "saurkraut", "corned beef", "thousand island dressing"],
+                      "description": "Toasted Reuben on rye with saurkraut and 1000 island"
+                    },
+                    {"name": "Banh-Mi",
+                      "ingredients": ["Pork Belly", "kimchi", "cabbage", "sauce"],
+                      "description": "Korean style banh mi sandwich with pork belly and kimchi"}],
+  "desserts": [{"name": "Creme Brulee",
+                "ingredients": ["Eggs", "sugar", "cream", "vanilla bean"],
+                "description": "Vanila cremebrulee with carmelized sugar"
+                },
+              {"name": "Pumpkin Pie",
+                "ingredients": ["Pumpkin", "milk", "eggs", "sugar", "shortening"],
+                "description": "Classic pumpkin pie topped with whipped cream"
+                },
+              {"name": "Berry Cobbler",
+                "ingredients": ["berries", "cream", "sugar", "flour"],
+                "description": "Berry cobbler with crumbles on top"
+                }],
+  "drinks": [{"name": "Whiskey Sour",
+              "ingredients": }]
+}
