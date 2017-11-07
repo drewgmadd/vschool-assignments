@@ -7,38 +7,53 @@
   font-family: "Title Font";
   src: url("iU65JP9acQHPDLkdalCF7pbhOpL-vLTkIjCTuVYsuO0.woff2");
 }
-.title-row {
-  height:300px;
-  background-image: ;
-  position: relative;
+@font-face {
+  font-family: "Italic Font";
+  src: url("QHIOz1iKF3bIEzRdDFaf5fbsUggLxuOzHNuXcSFlTaY.woff2");
 }
-.view-designs {
-  height:300px;
-  width: 34%;
-  background-color: #669F82;
-  opacity: 0.3;
-  position: absolute;
-  right: 0;
-  top: 0;
+@font-face {
+  font-family: "Body Font";
+  src: url("pR0sBQVcY0JZc_ciXjFsK8j0T1k_tV7QYhgnOhA2764.woff2");
 }
+@font-face {
+  font-family: "Icon Font";
+  src: url("verdemoderna.woff");
+}
+body{
+  background-image: url('http://www.csszengarden.com/214/bamboo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 /************
-
 HEADER STYLES
-
 ************/
 
 .title-text {
   font-family: "Title Font";
-  width: 400px;
-  margin: auto;
+  margin-top: 93px;
+  font-size: 3.3em;
+  position: relative;
+  right: 5%;
+  display: inline-block;
 }
-
+.subtitle {
+  font-family: "Italic Font";
+  color: #ACC9C1;
+  font-size: 2em;
+  position: absolute;
+  left: 25%;
+  top: 130px;
+  width: 70%;
+  display: inline-block;
+}
 .background-image {
   max-width: 100%;
   height: auto;
 }
-
 .intro-text{
   text-align: center;
   font-family: "Title Font";
@@ -49,60 +64,123 @@ HEADER STYLES
   font-size: 1.5em;
   text-transform: uppercase;
   cursor: pointer;
+  transition: .2s all ease-in-out 0s
 }
 
-.intro-text a:hover {
-  color: rgba(255, 255, 255, 1) !important;
+.intro-text:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.intro-text a:link,
-.intro-text a:visited {
-  color: #fff !important;
-}
 
 .top-inner-container {
-  margin: 0 auto;
-  position: relative;
-  top: 50%;
-  left: 25%;
-  transform: translate(-25%, -50%);
+  width: 75%;
+  position: absolute;
+  top: 4%;
+  left: 2%;
   color: #fff;
-  display: inline-block;
 }
-
 .title-row {
-  background-image: url("headerimg.jpg");
+  background-image: url("gridlines-opaquetop.png"), url("http://www.csszengarden.com/214/contours-opaque.png"), url("headerimg.jpg");
   max-width: 100%;
   height: 300px;
-
+  position: relative;
 }
-
 .top-img {
-  width: 13%;
+  width: 28%;
   height: auto;
   float: left;
-}
+  margin-right: 15px;
+  opacity: .4;
 
+}
 .examples {
-  height:100%;
+  height:880px;
   width: 34%;
   float:right;
   background-color: #E3EEE8;
 }
+.title-hover:hover{
+  text-decoration: none;
+}
+.view-designs {
+  height:100%;
+  width: 34%;
+  background-color: #669F82;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+}
+
+/**********
+Examples Styles
+***********/
+
+.example-title {
+  font-size: 1.4em;
+  color: #275251;
+  margin-top: 30px;
+  font-family: "Title Font";
+  margin-left: 40%;
+  transform: translateX(-50%);
+}
+.example-title:hover {
+  text-decoration: none;
+  color: #199C92;
+}
+.written-by {
+  margin-left: 40%;
+  transform: translateX(-50%);
+}
+.by {
+  color: #BDCBC3;
+  font-family: "Italic Font";
+}
+.author {
+  font-family: "Body Font";
+  color: #5E6A57;
+}
+.example {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  width: 352px;
+  margin-left: 10%;
+  float: left;
+}
+#top-button {
+  color: rgba(255, 255, 255, 1);
+}
 
 /***************
-
-Second Row Styles
-
+First Row Styles
 ****************/
-.introduction{
-  display: inline-block;
-  height: 30px;
-  width: 600px;
+
+.body-text{
+display: inline-block;
+width: 80%;
+text-align: left;
+margin-left: 10%;
+margin-top: 5%;
+font-family: "Body Font";
+font-size: 16px;
+margin-top: 15px;
+margin-bottom: -15px;
+
 }
-.participation-text {
-  height: 800px;
-  background-color: #BCE0CF;
+
+.heads {
+  margin-left: 10%;
+  font-family: "Title Font";
+}
+
+.intro-block {
+  height: 880px;
+  background-color: #ffffff;
+  position: relative;
+  width: 66%;
+  margin-right: 0px;
+  display: inline-block;
 }
 .links {
   height: 800px;
@@ -110,21 +188,170 @@ Second Row Styles
   width: 34%;
   float: right;
 }
-.requirements-text {
+/***********
+About styles
+************/
+.about-title {
+  font-size: 1.4em;
+  color: #275251;
+  margin-top: 30px;
+  font-family: "Title Font";
+  margin-left: 40%;
+  transform: translateX(-50%);
+}
+.about {
+  border-bottom: solid 1px lightgray;
+
+}
+.about-title:hover {
+  color:#199C92;
+  text-decoration: none;
+}
+
+/***********
+Second Row Styles
+***********/
+
+.participation-block {
   height: 800px;
-  background-color: aliceblue;
+  width: 66%;
+  background-color: rgba(121, 183, 154, .4);
+  color: rgba(0, 0, 0, .8);
+  position: relative;
+  display: inline-block;
+  margin-right: 0px;
+}
+.link-block {
+  position: relative;
+  left: 17%;
+  top: 20%;
+  width: 70%;
+}
+.about-links {
+  background-color: rgba(0, 0, 0, .2);
+  float: right;
+  height: 800px;
+  width: 34%;
+  position: relative
+
+}
+.participation-head {
+  display: inline-block;
+}
+
+/************
+Third Row Styles
+************/
+.requirement-block {
+  background-color: #ffffff;
+  height: 800px;
+  width: 66%;
+  display: inline-block;
+  margin-right: 0px;
+  position: relative;
+}
+.requirement-head {
+  display: inline-block;
 }
 .blank {
-  height: 800px;
-  background-color: #E3EEE8;
   float: right;
   width: 34%;
+  height: 800px;
+  background-color: #E3EEE8;
+  position: relative;
 }
-.credits {
+
+
+/**********
+Bottom Row Styles
+**********/
+
+.bottom-row {
+  width: 100%;
   height: 300px;
-  background-color: #296767;
+  text-align: center;
+  font-size: 2em;
+  color: #709B98;
+  background-image: url("gridlines-opaquetop.png"), url("http://www.csszengarden.com/214/contours-opaque.png"), url("headerimg.jpg");
+  position: relative;
 }
-.foot {
-  height: 150px;
+.bottom-text {
+  margin-left: 10%;
+  width: 80%;
+  font-family: "Body Font";
+  position: relative;
+  top: 35%;
+}
+.italicized {
+  font-style: italic;
+}
+.bottom-link{
+  color: #C0CECE;
+}
+.bottom-link:hover {
+  color: lightgray;
+
+}
+
+/********
+Icon Styles
+*********/
+
+.bottom-icons {
+  font-family: "Icon Font";
+  font-size: 5em;
+  color: lightgray;
+  height:150px;
+  width: 100%;
+  position: relative;
   background-color: #004549;
+  margin-bottom: 0;
+  position: relative;
+  left: 10;
+}
+.icon:hover {
+  color: #199C92;
+}
+.icon {
+  color: lightgray;
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .view-designs{
+    position: relative;
+    width: 100%;
+    bottom:0;
+    top: 50%;
+    left:0;
+    background-color: rgba(255,255,255,.3)
+  }
+  .title-row {
+    height: 500px;
+  }
+  .intro-text{
+    position: relative;
+    display: block;
+    width: 100%;
+    bottom: 0;
+  }
+  .examples, .intro-block, .about-links, .participation-block, .requirement-block{
+    width: 100%;
+  }
+  .about-links {
+    height: 500px;
+
+  }
+  .top-inner-container{
+    width: 100%;
+  }
+  .bottom-icons {
+    height: 250px;
+    text-align: center;
+  }
+  .title-text {
+    font-size: 2.8em;
+  }
 }
