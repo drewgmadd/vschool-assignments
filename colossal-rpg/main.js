@@ -26,10 +26,10 @@ class MonsterCreator {
 
 const names = ["Mongoose", "Snake", "Wolf", "Eagle", "Pupper"];
 const types = ["type1", "type2", "type3", "type4", "type5"];
-const weapons = ["Slap!", "Bow Staff!", "Sword!!", "Spear!!", "MAGIC!!!"];
+const weapons = ["knife", "Bow Staff!", "Sword!!", "Spear!!", "MAGIC!!!"];
 const abilities = ["ability1", "ability2", "ability3", "ability4", "ability5"];
 function randomAttribute() {
-  return Math.floor(Math.random() * 6);
+  return Math.floor(Math.random() * 5);
 }
 
 function newName(){
@@ -54,18 +54,39 @@ const slap = () => {
 }
 const bowStaff = () => {
   console.log(`${newMonster.name} has hit you in the shin with a bow staff! -20hp`);
-  character.hp = character.hp - 20;
+  character.hp = character.hp - Math.floor(Math.random() *20);
 }
 const sword = () => {
   console.log("You have been pierced with a sword! - 35hp");
-  character.hp = character.hp - 35;
+  character.hp = character.hp - Math.floor(Math.random() * 35);
+}
+const spear = () => {
+  console.log(`${newMonster.name} has attacked you with a spear`);
+  character.hp = character.hp - Math.floor(Math.random() * 50);
 }
 const enemyAttack = () => {
   let randomWeapon = enemyWeapons[randomAttribute()]
   console.log(randomWeapon);
-
+  if (randomWeapon === "Slap!") {
+    console.log(`${newMonster.name} has slapped you!`);
+    slap();
+    playerAttack();
+  } else if (randomWeapon === "Bow Staff!") {
+    console.log(`${newMonster.name} jacked you with a Bow Staff!`);
+    bowStaff();
+    playerAttack();
+  } else if (randomWeapon === "Sword!!") {
+    console.log(`${newMonster.name} has peirced you with a Sword!`);
+    sword();
+    playerAttack();
+  } else if (randomWeapon === "Spear!!") {
+    console.log(`${newMonster.name} has peirced you with a Spear`);
+    spear();
+    playerAttack();
+  }
   if (character.hp <= 0) {
     console.log("You have been defeated!");
+    newMonster = new MonsterCreator(randomHp(), newName(), null, newWeapon, newAbility);
   }
   playerAttack();
 }
