@@ -1,11 +1,11 @@
-import React, {Component} from "react";
-import Container from "./Container";
-class App extends Component{
-  render() {
+import React from "react";
+import NameList from "./NameList";
+function App() {
     return(
-    <Container/>
+      <div>
+        <NameList/>
+      </div>
     )
-  }
 }
 
 export default App;
