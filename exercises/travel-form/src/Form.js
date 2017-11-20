@@ -24,7 +24,6 @@ class Form extends Component{
   }
   handleInputChange(e) {
     const target = e.target;
-    const name = target.name;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     this.setState({[e.target.name]: e.target.value})
   }
