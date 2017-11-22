@@ -1,9 +1,9 @@
 const chai = require('chai');
 const assert = chai.assert;
-const makeAbba = require("./main");
+const noTriples = require("./main.js");
 
-describe('A function that given two strings 1 and 2 puts them in the order 1221', ()=>{
-  it("Should return one string consisteing of the two input strings 1 and 2 ordered as 1221", ()=>{
-    assert.equal(makeAbba("hi", "bye"), "hibyebyehi");
-  })
-})
+describe('A function that takes an array of integers and returns true if there are three of same integer in a row', ()=>{
+          it('Should return true if there are three equal consecutive integer in the input array', ()=>{
+            assert.equal(noTriples([1, 2, 2, 3]), true);
+          })
+        })

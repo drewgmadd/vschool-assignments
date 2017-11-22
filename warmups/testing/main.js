@@ -1,5 +1,8 @@
-function makeAbba(a, b) {
-  return (a+b+b+a).split(" ").join("");
+function noTriples(arr) {
+  for (let i = 0; i < arr.length - 2; i++) {
+    if (arr[i] === arr[i + 1]  && arr[i] === arr[i + 2]) {
+      return false;
+    }
+  }return true;
 }
-console.log(makeAbba("hi", "bye"))
-module.exports = makeAbba;
+module.exports = noTriples;
