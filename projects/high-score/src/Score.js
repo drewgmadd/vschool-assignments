@@ -4,7 +4,10 @@ class Score extends Component{
 
   render(props) {
     return (
-      <h1>{this.props.name}</h1>
+      <div>
+        <h1>{this.props.text}</h1>
+        <h2>{this.props.game}</h2>
+      </div>
     )
   }
 }
