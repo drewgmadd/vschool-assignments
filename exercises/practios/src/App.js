@@ -11,7 +11,7 @@ class App extends Component{
   }
     componentDidMount(){
       axios.get("https://swapi.co/api/people").then((response)=>{
-        this.setState({people: response.data.results})
+        this.setState({people: response.data})
       })
     }
 

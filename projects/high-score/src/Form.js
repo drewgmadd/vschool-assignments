@@ -66,7 +66,7 @@ class Form extends Component {
             <span>Score Acheived: </span><FormControl type="number" name="score" onChange={this.handleInputChange}/>
           </FormGroup>
           <FormGroup className="messageRow row">
-            <span>Display Message?</span><FormControl type="checkbox" onChange={this.handleInputChange}/>
+            <span>Display Message?  </span><FormControl type="checkbox" onChange={this.handleInputChange}/>
           </FormGroup>
           <button className="row" onClick={this.handleSubmit}>Post</button>
       </FormGroup>
