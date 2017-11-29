@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
+import ServiceDetail from "./ServiceDetail";
 
 class Services extends React.Component {
   constructor() {
@@ -34,10 +35,11 @@ class Services extends React.Component {
     return (
       <div>
         <div className="services-list:">
-          {this.state.services.map(service=>{
-            <Link to={`/services/${service.price}`}>{service.name}</Link>
-          })}
+          {this.state.services.map(service=><div><Link to={`/services/${service._id}`} key={service._id}>{service.name}</Link><br/></div>)}
         </div>
+        <Switch>
+          <Route path="/services/:serviceId" component={ServiceDetail}/>
+        </Switch>
       </div>
     )
   }
