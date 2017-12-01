@@ -1,0 +1,7 @@
+.logo {
+  color: gray;
+}
+.logo:hover {
+  color: blue;
+  cursor: pointer;
+}
