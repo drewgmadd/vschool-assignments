@@ -10,6 +10,6 @@ export default function reducer(prevState = [], action) {
     case "ADD_MOVIE":
       return [...prevState, action.movie];
     default:
-      return prevState;  
+      return prevState;
   }
 }
