@@ -2,6 +2,8 @@ import React from 'react';
 
 import {connect} from "react-redux";
 
+import {removeInfo} from "../redux/uglythings";
+
 function List(props){
   const uglies = props.uglystuff.map((ugly, i)=>
    (
@@ -9,7 +11,7 @@ function List(props){
      <h1 >{ugly.title}</h1>
      <img src={ugly.url}/>
      <p >{ugly.description}</p>
-     <button>Delete</button>
+     <button onClick={props.handleRemove}>Delete</button>
    </div>
    ))
   return (
@@ -23,4 +25,4 @@ function mapStateToProps(state){
   return state;
 }
 
-export default connect(mapStateToProps, null)(List);
+export default connect(mapStateToProps, {removeInfo})(List);

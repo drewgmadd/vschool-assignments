@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {addInfo} from "../redux/uglythings";
+import {addInfo, removeInfo} from "../redux/uglythings";
+
 
 class Form extends Component{
   constructor(){
@@ -28,6 +29,11 @@ class Form extends Component{
       description: ""
     })
   }
+  handleRemove(e) {
+    e.preventDefault();
+    this.props.removeInfo();
+    console.log(this.props.removeInfo())
+  }
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="form">
@@ -39,4 +45,4 @@ class Form extends Component{
     )
   }
 }
-export default connect(null, {addInfo})(Form);
+export default connect(null, {addInfo, removeInfo})(Form);

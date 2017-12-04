@@ -5,7 +5,7 @@ import List from "./List";
 
 export default function Main(props){
   return (
-    <div>
+    <div className="nav">
       <Form/>
       <List/>
     </div>
