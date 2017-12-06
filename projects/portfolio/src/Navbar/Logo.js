@@ -17,7 +17,7 @@ function Logo() {
   }
 
   return (
-    <div style={styles.box}>
+    <div className="box">
       <h1 className="logo" style={styles.logo}>AM</h1>
     </div>
   )

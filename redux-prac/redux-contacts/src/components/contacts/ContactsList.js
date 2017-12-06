@@ -7,11 +7,13 @@ class ContactsList extends Component {
     this.props.getAllTodos();
   }
   render() {
+    console.log(this.props.contacts)
     const contacts = this.props.contacts.map(
-      (contact, i) => <li key={contact.name+i}>{contact.name}</li>)
+      (contact, i) => <li key={contact.name+i}>{contact.description}</li>)
     return (
       <ul>
         {contacts}
+
       </ul>
     )
   }
