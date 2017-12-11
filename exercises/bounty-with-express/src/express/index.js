@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 const bodyParser = require("body-parser");
+const morgan = require("morgan");
 
 app.use(bodyParser.json());
+app.use(morgan("dev"));
 
 const bounties = [
   {
@@ -38,18 +40,6 @@ app.delete("/bounty/:id", (req, res)=>{
     return bounty._id !== Number(req.params.id)
   }))
 })
-
-app.put("bounty/:id", (req, res)=>{
-  const index = bounties.findIndex(item => item._id === req.params.id)
-  console.log(index);
-  const foundBounty = bounties[index];
-  for (let prop in foundBounty) {
-    if (foundBounty.hasOwnProperty(prop)) {
-      foundBounty[prop] = req.body[prop] || foundBounty[prop]
-    }
-  }
-  return res.send(bounties)
-});
 
 app.listen(port, ()=>{
   console.log(`App is listening on port ${port}`);
