@@ -14,7 +14,7 @@ class TodoForm extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
   updateInputs(e){
-    if (e.tarter.type === "checkbox") {
+    if (e.target.type === "checkbox") {
       this.setState({completed: e.target.checked});
     } else {
       this.setState({[e.target.name]: e.target.value});
