@@ -2,6 +2,6 @@
   height: 100px;
   width: 100%;
   background-color: rgba(124, 181, 127, 0.3);
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }

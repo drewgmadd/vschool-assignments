@@ -1,13 +1,18 @@
 import React from "react";
+import {Switch, Route} from "react-router-dom";
+
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 import BodyContainer from "./Body/BodyContainer";
+
 import "./app.css";
 function App() {
   return (
     <div>
       <Navbar/>
-      <BodyContainer/>
+      <Switch>
+        <Route exact path="/" component={BodyContainer}/>
+      </Switch>
       <Footer/>
     </div>
   )

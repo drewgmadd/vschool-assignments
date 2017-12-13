@@ -5,7 +5,7 @@ import "./navbar.css";
 function Navbar() {
 
   return (
-    <div >
+    <div  className="box">
       <Logo/>
       <h3 >Home</h3>
       <h3 >Contact</h3>
