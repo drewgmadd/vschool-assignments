@@ -18,6 +18,7 @@ mongoose.connect("mongodb://localhost/air-quality",
 );
 
 app.use("/students", require("./Routes/routes/studentRoutes"));
+app.use("/classes", require("./Routes/routes/classRoutes"));
 
 app.listen(port, ()=>{
   console.log(`Server is listening on port ${port}`);

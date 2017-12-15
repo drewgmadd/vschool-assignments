@@ -14,6 +14,10 @@ const studentSchema = new Schema({
     }
   },
     classes: [String],
+    depthOfKnowledge: {
+      type: Number,
+      enum: [1, 2, 3, 4]
+    },
     esl: Boolean,
     specialNeeds: Boolean,
     reducedLunch: Boolean,
