@@ -24,6 +24,21 @@ studentRoutes.get("/:id", (req, res)=>{
   });
 });
 
+studentRoutes.put("/:id", (req, res)=>{
+  Student.findById(req.params.id, (err, student)=>{
+    if (err) return res.status(500).send(err);
+    if (req.body.name) {
+      student.name = Object.assign(student.name, req.body.name);
+      delete req.body.name;
+    };
+    student = Object.assign(student, req.body);
+    student.save(err=>{
+      if (err) return res.status(500).send(err);
+      res.send(student);
+    });
+  });
+});
+
 studentRoutes.delete("/:id", (req, res)=>{
   Student.findByIdAndRemove(req.params.id, (err, student)=>{
     if (err) return res.status(500).send(err);

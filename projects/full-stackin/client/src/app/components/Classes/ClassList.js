@@ -1,58 +1,44 @@
 import React, {Component} from "react";
+
 import {connect} from "react-redux";
 
-import {getClasses, addClass} from "../../../redux/classes";
+import {getClasses, removeClass} from "../../../redux/classes";
+
+import Class from "./Class";
 
 class ClassList extends Component{
 constructor() {
   super();
   this.state = {
-    title: "",
-    grade: 0,
-    numberOfStudents: 0,
     classes: []
   }
-  this.handleChange = this.handleChange.bind(this);
-  this.handleSubmit = this.handleSubmit.bind(this);
 }
 componentDidMount() {
-  this.props.getClasses();
-  console.log(this.state.classes);
-}
-handleChange(e) {
-  this.setState({
-    [e.target.name]: e.target.value
-  })
-}
-handleSubmit(e) {
-  console.log(this.props.classes)
-  e.preventDefault();
-  this.props.addClass(this.state);
+  this.props.getClasses()
+  // this.props.getClasses();
+  console.log(this.props.classes);
 }
 
+// componentWillUpdate() {
+//   this.setState({
+//     classes: this.props.getClasses()
+//   })
+// }
+  render() {
+    const classes = this.props.classes.map(oneClass=>{
+      return (
+        <Class
+          key={oneClass._id}
+          oneclass={oneClass}
+          removeClass={this.props.removeClass}/>
+      )
+    })
+    console.log(this.props.classes)
 
-  render(){
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input
-          value={this.state.title}
-          onChange={this.handleChange}
-          name="title"
-          type="text"
-          placeholder="Class title"/>
-        <input
-          value={this.state.grade}
-          onChange={this.handleChange}
-          name="grade"
-          type="number"
-          placeholder="Grade"/>
-        <input
-          value={this.state.numberOfStudents}
-          onChange={this.handleChange}
-          name="numberOfStudents"
-          placeholder="Number of Students"/>
-        <button>Submit Class</button>
-      </form>
+      <div>
+        {classes}
+      </div>
     )
   }
 }
@@ -60,4 +46,4 @@ function mapStatetoProps(state) {
   return state;
 }
 
-export default connect(mapStatetoProps, {getClasses, addClass})(ClassList);
+export default connect(mapStatetoProps, {getClasses, removeClass})(ClassList);

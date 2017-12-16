@@ -4,5 +4,16 @@
     "express": "^4.16.2",
     "mongoose": "^4.13.7",
     "morgan": "^1.9.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

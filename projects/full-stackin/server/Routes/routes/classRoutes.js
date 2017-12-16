@@ -24,6 +24,13 @@ classRoutes.get("/:id", (req, res)=>{
   });
 });
 
+classRoutes.put("/:id", (req, res)=>{
+  Class.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, foundClass)=>{
+    if (err) return res.status(500).send(err);
+    res.send(foundClass);
+  })
+})
+
 classRoutes.delete("/:id", (req, res)=>{
   Class.findByIdAndRemove(req.params.id, (err, foundClass)=>{
     if (err) return res.status(500).send(err);

@@ -1,11 +1,16 @@
 import React, {Component} from "react";
 
+import ClassForm from "./ClassForm";
 import ClassList from "./ClassList";
+import "./classes.css";
 
 class Classes extends Component{
   render() {
     return (
-      <ClassList/>
+      <div>
+        <ClassForm/>
+        <ClassList/>
+      </div>
     )
   }
 }
