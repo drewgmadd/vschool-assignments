@@ -1,9 +1,21 @@
-import React from "react";
+import React, {Component} from "react";
 
-function TeachingTools() {
-  return (
-    <h3>Teaching Tools</h3>
-  )
+import {connect} from "react-redux";
+
+import NameGenerator from "./NameGenerator";
+import GroupGenerator from "./GroupGenerator";
+import Timer from "./Timer";
+
+class TeachingTools extends Component {
+  render() {
+    return (
+      <div>
+        <NameGenerator/>
+        <GroupGenerator/>
+        <Timer/>
+      </div>
+    )
+  }
 }
 
-export default TeachingTools;
+export default connect(null, null)(TeachingTools);
