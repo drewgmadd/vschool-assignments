@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import NameGenerator from "./NameGenerator";
 import GroupGenerator from "./GroupGenerator";
 import Timer from "./Timer";
+import "./teachingTools.css";
 
 class TeachingTools extends Component {
   render() {

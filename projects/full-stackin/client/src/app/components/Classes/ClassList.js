@@ -15,15 +15,9 @@ constructor() {
 }
 componentDidMount() {
   this.props.getClasses()
-  // this.props.getClasses();
-  console.log(this.props.classes);
+
 }
 
-// componentWillUpdate() {
-//   this.setState({
-//     classes: this.props.getClasses()
-//   })
-// }
   render() {
     const classes = this.props.classes.map(oneClass=>{
       return (
@@ -33,8 +27,6 @@ componentDidMount() {
           removeClass={this.props.removeClass}/>
       )
     })
-    console.log(this.props.classes)
-
     return (
       <div>
         {classes}
@@ -42,8 +34,8 @@ componentDidMount() {
     )
   }
 }
-function mapStatetoProps(state) {
+function mapStateToProps(state) {
   return state;
 }
 
-export default connect(mapStatetoProps, {getClasses, removeClass})(ClassList);
+export default connect(mapStateToProps, {getClasses, removeClass})(ClassList);

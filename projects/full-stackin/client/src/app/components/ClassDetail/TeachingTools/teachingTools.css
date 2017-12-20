@@ -1,0 +1,71 @@
+/********
+NAME STYLES
+*********/
+.name-generator {
+  height: 150px;
+  width: 200px;
+  margin-left: 30%;
+  border-radius: 15px;
+  border: 1px solid black;
+  position: absolute;
+  top: 20px;
+  background-color: rgba(70, 50, 75, 0.5);
+  transition: .1s all ease-in-out .1s;
+}
+.name-generator:hover {
+  background-color: rgb(70, 50, 75);
+}
+.name-title {
+  text-align: center;
+  margin-top: 15px;
+}
+.name-button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+/*********
+GROUP STYLES
+**********/
+.group-generator {
+  height: 200px;
+  width: 400px;
+  border: 1px solid black;
+  position: absolute;
+  margin-left: 30%;
+  top: 200px;
+  background-color: rgba(70, 50, 75, 0.5);
+  transition: .1s all ease-in-out .1s;
+}
+.group-generator:hover {
+  background-color: rgb(70, 50, 75)
+}
+.group-title {
+  text-align: center;
+  margin-top: 15px;
+}
+.group-question {
+  text-align: center;
+  margin-top: 15px;
+}
+.group-input {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+/*********
+TIMER STYLES
+*********/
+.timer {
+  height: 150px;
+  width: 200px;
+  border: 1px solid black;
+  position: absolute;
+  margin-left: 60%;
+  top: 20px;
+}
+.timer-text {
+  display: inline-block;
+}
+.timer-button {
+  height: 30px;
+  margin-left: 10px;
+}

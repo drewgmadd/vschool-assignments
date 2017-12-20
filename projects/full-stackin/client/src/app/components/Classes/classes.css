@@ -4,5 +4,10 @@
   margin: 15px;
   height: 175px;
   vertical-align: top;
-
+}
+.class-title {
+  text-align: center;
+}
+.class-link {
+  color: black;
 }

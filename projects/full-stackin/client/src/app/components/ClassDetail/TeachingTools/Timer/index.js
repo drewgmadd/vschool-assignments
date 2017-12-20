@@ -2,8 +2,9 @@ import React from "react";
 
 function Timer() {
   return (
-    <div>
-      <h2>Timer: </h2>
+    <div className="timer">
+      <h2 className="timer-text">Timer:  </h2>
+      <button className="timer-button">Start/Stop</button>
     </div>
   )
 }

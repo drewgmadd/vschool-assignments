@@ -20,11 +20,11 @@ class Class extends Component {
     console.log(this.props.oneclass._id, "id")
     return (
       <div className="class-card">
-        <h1>{this.props.oneclass.title}</h1>
-        <h3>Grade: {this.props.oneclass._id}</h3>
+        <h1 className="class-title">{this.props.oneclass.title}</h1>
+        <h3>Grade: {this.props.oneclass.grade}</h3>
         <h3>Number of Students: {this.props.oneclass.numberOfStudents}</h3>
         <button onClick={()=>this.props.removeClass(this.props.oneclass._id)}>Remove Class</button>
-        <Link to="/class-detail">Go to Class Page</Link>
+        <Link className="class-link" to="/class-detail">Go to Class Page</Link>
       </div>
   )}
 }
