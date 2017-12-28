@@ -8,7 +8,8 @@ class GroupGenerator extends Component {
     super();
     this.state = {
       stuents: [],
-      groupSize: 2
+      groupSize: 2,
+      showGroups: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleMakeGroup = this.handleMakeGroup.bind(this);

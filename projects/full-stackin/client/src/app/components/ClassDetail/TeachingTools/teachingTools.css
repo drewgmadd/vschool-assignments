@@ -17,11 +17,16 @@ NAME STYLES
 }
 .name-title {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .name-button {
+  margin-top: 15px;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+.name-display {
+  text-align: center;
+  margin-top: 15px;
 }
 /*********
 GROUP STYLES
@@ -30,6 +35,7 @@ GROUP STYLES
   height: 200px;
   width: 400px;
   border: 1px solid black;
+  border-radius: 15px;
   position: absolute;
   margin-left: 30%;
   top: 200px;
