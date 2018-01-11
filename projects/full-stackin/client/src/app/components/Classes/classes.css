@@ -11,3 +11,10 @@
 .class-link {
   color: black;
 }
+.grade-input {
+  display: inline-block;
+  width: 40px;
+}
+.grade-title {
+  display: inline-block;
+}

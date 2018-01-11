@@ -1,0 +1,164 @@
+/*************
+GENERAL STYLES
+************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Muli';
+}
+body {
+  background-color: #237037;
+  background-image: url("./images/texture.png");
+}
+
+/************
+NAVBAR STYLES
+***********/
+
+.navbar {
+  width: 100%;
+  height: 225px;
+  background-color: whitesmoke;
+  text-align: center;
+  color: #086636;
+}
+.name {
+  transform: translateY(55%);
+  font-size: 3em; 
+  font-weight:  bold;
+}
+
+.header-subtext {
+  font-size: 1.5em;
+  transform: translateY(80%);
+}
+
+/**************
+ABOUT BLOCK STYLES
+**************/
+
+.about-block {
+  font-family: 'Roboto';
+  text-align: center;
+  width: 758px;
+  height: 380px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5%
+}
+.about-text-title {
+  margin-left: 50%;
+  font-size: 3em;
+  transform: translateX(-50%);
+  width: 200px;
+  border-bottom: 3px solid sandybrown;
+  color: whitesmoke;
+}
+.headshot {
+  height: 225px;
+  width: 225px;
+  margin-top: 30px;
+  float: left;
+  margin-top: 30px;
+  background-image: url("./images/DSC01817-2.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 150px;
+}
+.about-text {
+  display: inline-block;
+  width: 500px;
+  float: right;
+  text-align: justify;
+  margin-top: 30px;
+  color: whitesmoke;
+  font-size: 1.1em;
+}
+/**************
+PORTFOLIO STYLES
+*************/
+.portfolio{
+  font-family: 'Roboto';
+  text-align: center;
+  width: 100%;
+  height: 580px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5%;
+  background-color: rgb(245, 245, 245);
+}
+.portfolio-title {
+  margin-left: 50%;
+  font-size: 3em;
+  transform: translateX(-50%);
+  width: 200px;
+  border-bottom: 3px solid sandybrown;
+  color: #086636;
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+.project-block {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin-top: 30px;
+  vertical-align: top;
+}
+.project-image {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 60px 30px #086636;
+}
+.image-one {
+  background-image: url("./images/space.18.18 AM.png");
+}
+.image-two {
+  background-image: url("./images/classes.39.08 AM.png");
+}
+.image-three {
+  background-image: url("./images/actor.41.13 AM.png");
+}
+.center {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.project-details {
+  display: inline-block;
+  color: #086636;
+  margin-top: 50px;
+}
+
+/***************
+CONTACT STYLES
+*************/
+
+.contact {
+  height: 325px;
+  width: 100%;
+}
+.contact-title {
+  margin-left: 50%;
+  font-size: 3em;
+  transform: translateX(-50%);
+  width: 180px;
+  border-bottom: 3px solid sandybrown;
+  color: whitesmoke;
+  padding-top: 3%;
+}
+.contact-info {
+  margin-top: 30px;
+}
+.link {
+  font-size: 4em;
+  color: sandybrown;
+  text-decoration: none;
+  margin-left: 15%;
+  transition: .7s .3s all ease-in-out;
+}
+.link:hover {
+  color: whitesmoke;
+}

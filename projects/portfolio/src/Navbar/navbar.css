@@ -1,5 +1,26 @@
+/************
+NAVBAR STYLES
+************/
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(124, 181, 127, 0.3);
+  position: fixed;
+  top: 0;
+}
+
+
+/***********
+LOGO STYLES
+************/
+
 .logo {
-  color: gray;
+  color: black;
+  margin-top: 50px;
+  transform: translateY(-50%);
+  text-align: center;
+  float: left;
 }
 .logo:hover {
   color: blue;
@@ -8,10 +29,4 @@
   transform: translateY(-50%);
   text-align: center;
   transition: .3s all ease-in-out .2s;
-}
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: inline-block;
 }

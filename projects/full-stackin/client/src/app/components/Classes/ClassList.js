@@ -15,11 +15,11 @@ constructor() {
 }
 componentDidMount() {
   this.props.getClasses()
-
 }
 
   render() {
-    const classes = this.props.classes.map(oneClass=>{
+    console.log(JSON.parse(localStorage.getItem("classes")))
+    const classes = JSON.parse(localStorage.getItem("classes")).map(oneClass=>{
       return (
         <Class
           key={oneClass._id}

@@ -1,16 +1,12 @@
 import React from "react";
 import Intro from "./Intro";
 import Description from "./Description";
+import "./body.css";
 
 function BodyContainer() {
-  const styles = {
-    mainBlock: {
-      marginTop: "150px",
-      marginLeft: "5%"
-    }
-  }
+
   return (
-    <div style={styles.mainBlock}>
+    <div className="body-container">
       <Intro/>
       <Description/>
     </div>
