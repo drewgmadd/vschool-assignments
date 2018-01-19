@@ -34,6 +34,7 @@ HEADER STYLES
 .title-text {
   font-family: "Title Font";
   margin-top: 93px;
+  margin-left: 60px;
   font-size: 3.3em;
   position: relative;
   right: 5%;
@@ -44,7 +45,7 @@ HEADER STYLES
   color: #ACC9C1;
   font-size: 2em;
   position: absolute;
-  left: 25%;
+  left: 260px;
   top: 130px;
   width: 70%;
   display: inline-block;
@@ -57,7 +58,7 @@ HEADER STYLES
   text-align: center;
   font-family: "Title Font";
   padding: 25px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 27% auto;
   width: 70%;
   font-size: 1.5em;
@@ -81,19 +82,20 @@ HEADER STYLES
 .title-row {
   background-image: url("gridlines-opaquetop.png"), url("http://www.csszengarden.com/214/contours-opaque.png"), url("headerimg.jpg");
   max-width: 100%;
-  height: 300px;
+  height: 375px;
   position: relative;
 }
 .top-img {
-  width: 28%;
+  width: 23%;
   height: auto;
   float: left;
   margin-right: 15px;
+  margin-top: 50px;
   opacity: .4;
 
 }
 .examples {
-  height:880px;
+  height:750px;
   width: 34%;
   float:right;
   background-color: #E3EEE8;
@@ -104,8 +106,7 @@ HEADER STYLES
 .view-designs {
   height:100%;
   width: 34%;
-  background-color: #669F82;
-  opacity: 0.3;
+  background-color: rgba(102, 159, 130, 0.2);
   position: absolute;
   right: 0;
   top: 0;
@@ -227,7 +228,7 @@ Second Row Styles
   width: 70%;
 }
 .about-links {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(121, 183, 154, 0.6);
   float: right;
   height: 800px;
   width: 34%;
@@ -309,7 +310,7 @@ Icon Styles
   left: 10;
 }
 .icon:hover {
-  color: #199C92;
+  color: gray;
 }
 .icon {
   color: lightgray;
@@ -323,13 +324,16 @@ Icon Styles
     position: relative;
     width: 100%;
     bottom:0;
-    top: 50%;
+    top: 20%;
     left:0;
-    background-color: rgba(255,255,255,.3)
   }
+}
+
+
+@media (max-width: 768px) {
   .title-row {
-    height: 500px;
-  }
+    height: 250px;
+}
   .intro-text{
     position: relative;
     display: block;
@@ -352,5 +356,50 @@ Icon Styles
   }
   .title-text {
     font-size: 2.8em;
+  }
+}
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 2.2em;
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+}
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 1.3em;
+    width: auto;
+    margin-left: -150px;
+    transform: translateY(-270%);
+  }
+}
+@media (max-width: 768px) {
+  .top-img {
+    height:50px;
+    width: 50px;
+  }
+}
+@media( max-width: 768px) {
+  .top-inner-container {
+    text-align: center;
+  }
+}
+@media(max-width: 768px) {
+  .view-designs {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 50px;
+    left: 0;
+  }
+}
+@media(max-width: 768px) {
+  .bottom-row {
+    height: 370px;
+  }
+}
+@media(max-width: 768px) {
+  .participation-block {
+    height: 900px;
   }
 }

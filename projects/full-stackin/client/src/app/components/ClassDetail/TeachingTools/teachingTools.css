@@ -75,3 +75,8 @@ TIMER STYLES
   height: 30px;
   margin-left: 10px;
 }
+.back {
+  z-index: 1;
+  display: inline-block;
+  float: right;
+}

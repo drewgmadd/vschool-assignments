@@ -18,23 +18,31 @@ class Class extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
-  
+  // componentDidUpdate() {
+  //   if (this.state.grade !== this.props.oneclass.grade) {
+  //     this.setState({
+  //       grade: this.state.grade
+  //     })
+  //   }
+  // }
   handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value
     })
   }
   handleClick(e) {
-    console.log(this.state.grade, this.props.oneclass._id)
-    this.props.updateClass(this.props.oneclass._id, this.state.grade);
+    console.log(this.props.oneclass.grade, "grade", this.props.oneclass._id)
+    this.props.updateClass(this.props.oneclass._id, {grade: this.state.grade});
+    console.log(this.props, "in click");
   }
 
 
   render(){
+    console.log(this.props);
     return (
       <div className="class-card">
         <h1 className="class-title">{this.props.oneclass.title}</h1>
-        <h3 className="grade-title">Grade: {this.props.oneclass.grade}</h3>
+        <h3 className="grade-title">Grade: {this.state.grade}</h3>
         <input
           className="grade-input"
           name="grade"

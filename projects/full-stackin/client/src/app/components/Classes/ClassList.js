@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 
 import {connect} from "react-redux";
 
@@ -17,8 +18,8 @@ componentDidMount() {
   this.props.getClasses()
 }
 
+
   render() {
-    console.log(JSON.parse(localStorage.getItem("classes")))
     const classes = JSON.parse(localStorage.getItem("classes")).map(oneClass=>{
       return (
         <Class
@@ -30,6 +31,7 @@ componentDidMount() {
     return (
       <div>
         {classes}
+        <Link to="./">Back</Link>
       </div>
     )
   }

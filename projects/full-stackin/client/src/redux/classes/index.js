@@ -26,9 +26,11 @@ export function addClass(newClass) {
   }
 }
 export function updateClass(id, updatedClass) {
+  console.log(updatedClass);
   return dispatch => {
     axios.put(`/classes/${id}`, updatedClass)
       .then(response => {
+        console.log(response.data)
         dispatch({
           type: "UPDATE_CLASS",
           data: response.data
@@ -60,7 +62,7 @@ export default function reducer(prevState = [], action) {
       })
       return updatedClasses;
     case "UPDATE_CLASS":
-    console.log(action.data.title);
+    console.log(action.data);
       return action.data;
     default:
       return prevState;

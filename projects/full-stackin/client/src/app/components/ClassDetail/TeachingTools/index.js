@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 
 import {connect} from "react-redux";
 
@@ -14,6 +15,7 @@ class TeachingTools extends Component {
         <NameGenerator/>
         <GroupGenerator/>
         <Timer/>
+        <Link className="back" to="/classes">Back</Link>
       </div>
     )
   }
