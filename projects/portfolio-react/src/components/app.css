@@ -9,7 +9,7 @@ GENERAL STYLES
 }
 body {
   background-color: #237037;
-  background-image: url("./images/texture.png");
+  background-image: url("../images/texture.png");
 }
 
 /************
@@ -62,7 +62,7 @@ ABOUT BLOCK STYLES
   float: left;
   margin-left: 15%;
   margin-top: 30px;
-  background-image: url("./images/DSC01817-2.jpg");
+  background-image: url("../images/DSC01817-2.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 150px;
@@ -81,9 +81,11 @@ ABOUT BLOCK STYLES
   text-decoration: none;
   color: sandybrown;
 }
+
 /**************
 PORTFOLIO STYLES
 *************/
+
 .portfolio{
   font-family: 'Roboto';
   text-align: center;
@@ -120,13 +122,13 @@ PORTFOLIO STYLES
   box-shadow: 0 0 60px 20px #086636;
 }
 .image-one {
-  background-image: url("./images/space.18.18 AM.png");
+  background-image: url("../images/space.18.18 AM.png");
 }
 .image-two {
-  background-image: url("./images/classes.39.08 AM.png");
+  background-image: url("../images/classes.39.08 AM.png");
 }
 .image-three {
-  background-image: url("./images/actor.41.13 AM.png");
+  background-image: url("../images/actor.41.13 AM.png");
 }
 .center {
   margin-left: 150px;
@@ -136,6 +138,7 @@ PORTFOLIO STYLES
   display: inline-block;
   color: #086636;
   margin-top: 50px;
+  width: 230px;
 }
 
 /***************
@@ -168,6 +171,7 @@ CONTACT STYLES
 .link:hover {
   color: whitesmoke;
 }
+
 /*********
 MEDIA QUERIES
 ********/
