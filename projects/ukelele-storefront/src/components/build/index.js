@@ -1,9 +1,14 @@
 import React from "react";
 
+import Form from "./Form";
+import LabelImage from "./LabelImage";
+
 function Build() {
   return (
     <div>
       <h1>Build</h1>
+      <Form/>
+      <LabelImage/>
     </div>
   )
 }

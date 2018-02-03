@@ -5,6 +5,7 @@ import Navbar from "./navbar";
 import About from "./about";
 import Build from "./build";
 import Contact from "./contact";
+import "./app.css";
 
 function App() {
   return (

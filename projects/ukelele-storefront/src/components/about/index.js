@@ -1,9 +1,15 @@
 import React from "react";
 
+import LogoBar from "./LogoBar";
+import AboutText from "./AboutText";
+import Examples from "./Examples";
+
 function About() {
   return (
     <div>
-      <h1>About</h1>
+      <LogoBar/>
+      <AboutText/>
+      <Examples/>
     </div>
   )
 }

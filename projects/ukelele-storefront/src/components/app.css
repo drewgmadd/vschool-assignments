@@ -1,0 +1,153 @@
+/************
+GENERAL STYLES
+*************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/***********
+NAVBAR STYLES
+***********/
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: whitesmoke;
+  margin-bottom: 0;
+}
+
+.nav-link {
+  color: black;
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+/************
+LOGO STYLES
+*************/
+
+.logo {
+  background: url("../sources/asfalt-light.png"), url("https://images.pexels.com/photos/258283/pexels-photo-258283.jpeg?h=350&auto=compress&cs=tinysrgb");
+  height: 275px;
+  width: 100%;
+  background-size: cover;
+}
+
+/***********
+ABOUT STYLES
+************/
+
+.about-text {
+  width: 45%;
+  float: left;
+  margin-top: 20px;
+  margin-left: 15px;
+  text-align: justify;
+}
+
+/**********
+CAROUSEL STYLES
+***********/
+
+.carousel {
+  width: 50%;
+  float: right;
+}
+
+.carousel-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.one {
+  background-image: url("../sources/5545.jpg");
+}
+.two {
+  background-image: url("../sources/5546.jpeg");
+}
+.three {
+  background-image: url("../sources/5547.jpeg");
+}
+.four {
+  background-image: url("../sources/5548.jpeg");
+}
+.five {
+  background-image: url("../sources/5550.jpeg");
+}
+.six {
+  background-image: url("../sources/5551.jpeg");
+}
+.seven {
+  background-image: url("../sources/5553.jpeg");
+}
+.eight {
+  background-image: url("../sources/5555.jpeg");
+}
+.nine {
+  background-image: url("../sources/5557.jpeg");
+}
+
+/**********
+FORM STYLES ON BUILD VIEW
+***********/
+
+.build-form {
+  margin-left: 10px;
+  width: 300px;
+  display: inline-block;
+}
+
+.select {
+  display: block;
+}
+
+/************
+EXAMPLE UKE STYLES
+************/
+
+.labeled-uke {
+  width: 490px;
+  height: 500px;
+  float: right;
+  margin-right: 50px;
+  /*background-image: url("http://thehub.musiciansfriend.com/images/ukulele/DV016_Jpg_Large_519269_R.jpg");
+  background-size: contain;
+  background-position: center;*/
+
+}
+.tuners {
+margin-left: 110px
+}
+.marker-dots {
+  margin-left: 24px;
+  transform: translateY(420%);
+}
+.rosette {
+  margin-left: 45px;
+  transform: translateY(520%);
+}
+.labeled-uke > div > h4 {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.uke-image {
+  width: 500px;
+  height: 200px;
+  transform: rotate(-80deg);
+}
+
+/************
+CONTACT STYLES
+***********/
+
+.contact {
+  height: 800px;
+  width: 100%;
+  background-color: whitesmoke;
+}
