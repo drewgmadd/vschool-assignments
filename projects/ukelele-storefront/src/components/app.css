@@ -16,7 +16,12 @@ NAVBAR STYLES
   background-color: whitesmoke;
   margin-bottom: 0;
 }
-
+.navbar > h3 {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Lobster';
+  margin-top:15px;
+}
 .nav-link {
   color: black;
   float: right;
@@ -54,8 +59,17 @@ CAROUSEL STYLES
 .carousel {
   width: 50%;
   float: right;
+  margin-top: 20px;
 }
-
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
+.glyphicon {
+  color: black;
+}
 .carousel-img {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -63,6 +77,10 @@ CAROUSEL STYLES
   width: 200px;
   background-size: cover;
   background-position: center;
+  border-radius: 15px;
+}
+.carousel-indicators {
+  bottom: 0px;
 }
 .one {
   background-image: url("../sources/5545.jpg");
@@ -101,7 +119,16 @@ FORM STYLES ON BUILD VIEW
   width: 300px;
   display: inline-block;
 }
-
+.build-form > button {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.build {
+  margin-left: 20px;
+}
+.build > h1 {
+  margin-left: 20px;
+}
 .select {
   display: block;
 }

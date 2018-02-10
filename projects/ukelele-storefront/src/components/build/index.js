@@ -5,7 +5,7 @@ import LabelImage from "./LabelImage";
 
 function Build() {
   return (
-    <div>
+    <div className="build">
       <h1>Build</h1>
       <Form/>
       <LabelImage/>
