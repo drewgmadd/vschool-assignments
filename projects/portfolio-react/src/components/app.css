@@ -27,11 +27,15 @@ NAVBAR STYLES
   transform: translateY(55%);
   font-size: 3em; 
   font-weight:  bold;
+  animation-duration: 2s;
+  animation-name: fadein;
 }
 
 .header-subtext {
   font-size: 1.5em;
   transform: translateY(80%);
+  animation-duration: 2s;
+  animation-name: fadein;
 }
 
 /**************
@@ -45,7 +49,9 @@ ABOUT BLOCK STYLES
   height: 380px;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: 5%
+  margin-top: 5%;
+  animation-duration: 2s;
+  animation-name: fadein;
 }
 .about-text-title {
   margin-left: 50%;
@@ -54,6 +60,17 @@ ABOUT BLOCK STYLES
   width: 200px;
   border-bottom: 3px solid sandybrown;
   color: whitesmoke;
+  animation-duration: 2s;
+  animation-name: fadein;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 .headshot {
   height: 225px;
@@ -103,7 +120,7 @@ PORTFOLIO STYLES
   width: 200px;
   border-bottom: 3px solid sandybrown;
   color: #086636;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 /*.project-block {
   height: 200px;
@@ -123,12 +140,22 @@ PORTFOLIO STYLES
   box-shadow: 0 0 50px 10px #086636;
 }
 .carousel-caption {
+  color: #086636;
   top: 20px;
   left: 55%;
   text-align: justify;
 }
+.carousel-caption > h4 {
+  border-bottom: 2px solid sandybrown;
+  width: 100px;
+  padding-bottom: 5px;
+}
 .carousel-caption > li {
-  color: #086636;
+  margin-bottom: 5px;
+}
+.next > .carousel-caption {
+  margin-top: 60px;
+  /*keeps styling for next carousel-caption*/
 }
 .image-one {
   background-image: url("../images/space.18.18 AM.png");
@@ -143,7 +170,7 @@ PORTFOLIO STYLES
 
 .carousel {
   width: 100%;
-  height: 580px;
+  height: 480px;
 }
 .carousel-inner {
   height: 100%;
@@ -153,6 +180,15 @@ PORTFOLIO STYLES
 }
 .glyphicon {
   top: 35%;
+}
+.carousel-indicators > .active {
+  background-color: sandybrown;
+}
+.carousel-indicators > li {
+  border: 1px solid #086636;
+}
+.carousel-control, .carousel-control:before, .carousel-control:after, .carousel-control:hover {
+  color: sandybrown;
 }
 /***************
 CONTACT STYLES
@@ -183,6 +219,23 @@ CONTACT STYLES
 }
 .link:hover {
   color: whitesmoke;
+}
+/***********
+RESUME STYLES
+************/
+.resume {
+  height: 500px;
+  width: 100%;
+}
+.resume-image {
+  background-image: url("../images/AndrewGMaddenResume-1.png");
+  background-position: center;
+  background-size: contain;
+  height: 1000px;
+  width: 800px;
+  margin-left: 50%;
+  
+  transform: translateX(-50%);
 }
 
 /*********

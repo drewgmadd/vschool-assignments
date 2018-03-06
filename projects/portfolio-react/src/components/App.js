@@ -1,18 +1,17 @@
 import React from "react";
+import {Switch, Route} from "react-router-dom";
 
 import "./app.css";
-import Title from "./title/";
-import Intro from "./intro/";
-import Projects from "./projects/";
-import Contact from "./contact/";
+import Main from "./main";
+import Resume from "./resume";
 
 function App() {
   return (
     <main>
-      <Title/>
-      <Intro/>
-      <Projects/>
-      <Contact/>     
+      <Switch>
+        <Route exact path="/" component={Main}/>
+        <Route path="/resume" component={Resume}/>
+      </Switch>
     </main>
 
   )

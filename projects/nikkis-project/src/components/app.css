@@ -1,0 +1,49 @@
+/************
+GENERAL STYLES
+*************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*************
+TOP IMAGE STYLES
+*************/
+
+.top-photo {
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/lilfeet.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.top-photo > h3 {
+  width: 48%;
+  margin-left: 20px;
+  color: whitesmoke;
+  line-height: 1.5em;
+  font-size: 2.7em;
+  font-family: 'Tangerine';
+  transform: translateY(30%);
+}
+/************
+LINK STYLES
+************/
+.link {
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  margin-left: 12.5%;
+  margin-top: 20px;
+}
+.svg-inline--fa {
+  font-size: 3em;
+  color: black;
+}
+.link {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  color: black;
+}
