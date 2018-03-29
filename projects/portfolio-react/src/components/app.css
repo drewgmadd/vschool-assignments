@@ -51,7 +51,7 @@ ABOUT BLOCK STYLES
   transform: translateX(-50%);
   margin-top: 5%;
   animation-duration: 2s;
-  animation-name: fadein;
+  /*animation-name: fadein;*/
 }
 .about-text-title {
   margin-left: 50%;
@@ -72,6 +72,20 @@ ABOUT BLOCK STYLES
     opacity: 1;
   }
 }
+@keyframes growPic {
+  from {
+    width: 0px;
+    height: 0px;
+    margin-top: 70px;
+    opacity: .5;
+  }
+  to {
+    width: 225px;
+    height: 225px;
+    margin-top: 30px;
+    opacity: 1;
+  }
+}
 .headshot {
   height: 225px;
   width: 225px;
@@ -83,6 +97,9 @@ ABOUT BLOCK STYLES
   background-size: cover;
   background-position: center;
   border-radius: 150px;
+  animation-name: growPic;
+  animation-duration: 2s;
+
 }
 .about-text {
   display: inline-block;
@@ -227,6 +244,7 @@ RESUME STYLES
   height: 500px;
   width: 100%;
 }
+
 .resume-image {
   background-image: url("../images/AndrewGMaddenResume-1.png");
   background-position: center;
@@ -234,7 +252,8 @@ RESUME STYLES
   height: 1000px;
   width: 800px;
   margin-left: 50%;
-  
+
+
   transform: translateX(-50%);
 }
 
