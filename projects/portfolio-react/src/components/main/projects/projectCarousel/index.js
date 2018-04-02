@@ -12,6 +12,7 @@ function ProjectCarousel() {
               <li>Multiple 3rd party API's</li>
               <li>Thematically Styled</li>
               <li>Multi-view SPA</li>
+              <a href="silly-space-things.surge.sh"><button>Go</button></a>
           </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
